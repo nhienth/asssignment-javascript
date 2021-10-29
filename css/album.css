@@ -1,0 +1,58 @@
+.index{
+    box-shadow: 0px 0px 10px rgba(0, 58, 115, 0.712);
+    color: wheat;
+}
+.content .image{
+    width: 70%;
+    height: 550px;
+    margin: 0 auto;
+    margin-top : 20px;
+    position: relative;
+}
+.content .image img{
+    width: 100%;
+    height: 100%;
+}
+.content button{
+    padding: 15px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: red;
+    background: linear-gradient(-45deg, rgba(47, 129, 237, 0.671), rgba(178, 255, 218, 0.589));
+    position: absolute;
+    opacity: 0.4;
+    transition: 0.5s ease;
+}
+.content .next{
+    right: 2%;
+    top: 46%;
+}
+.content .prev{
+    left: 2%;
+    top: 46%;
+}
+.content button:hover{
+   opacity: 1;
+   box-shadow: 0px 0px 10px #77A1D3;
+   transition: 0.5s ease;
+}
+.fas{
+    opacity: 0.7;
+    font-size: 18px;
+}
+.image .count{
+   position: absolute;
+   bottom: 20px;
+   left: 44%;
+   font-size: 30px;
+   font-weight: 700;
+   opacity: 0.4;
+   transition: 0.4s ease;
+   cursor:default;
+   color: white
+}
+.image .count:hover{
+    opacity: 1;
+    transition: 0.4s ease;
+}

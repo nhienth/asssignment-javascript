@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/497e58feb8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/album.css" />
+    <title>Bộ sưu tập ảnh</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="background">
+          <p class="title">Assignment JavaScript</p>
+        </div>
+      </header>
+      <nav class="nav">
+        <ul>
+          <li><a href="#content" class="index">Bộ sưu tập ảnh</a></li>
+          <li><a href="registration.html" class="regist">Đăng ký</a></li>
+          <li><a href="selling.html" class="sell">Bán hàng</a></li>
+        </ul>
+      </nav>
+      <div class="content" id="content">
+        <p class="title1">bộ sưu tập ảnh</p>
+        <div class="image">
+          <p class="count">
+            Ảnh <span id="num"> 1 </span> / <span id="imglength"></span>
+          </p>
+          <img src="./images/img0.jpg" id="img" alt="" />
+          <button class="prev" onclick="prev()">
+            <i class="fas fa-angle-double-left"></i>
+          </button>
+          <button class="next" onclick="next()">
+            <i class="fas fa-angle-double-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/slideshow.js"></script>
+  </body>
+</html>

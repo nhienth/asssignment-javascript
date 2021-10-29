@@ -1,0 +1,135 @@
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+input, button, select, textarea{
+outline: none;
+font-family: 'Baloo Chettan 2', cursive;
+}
+button{
+    cursor: pointer;
+}
+input{
+    line-height: normal;
+}
+body{
+    font-size: 14px;
+    line-height: 1;
+    font-family: 'Baloo Chettan 2', cursive;
+    position: relative;
+    height: 1100px;
+}
+body::-webkit-scrollbar{
+    width: 1em;
+}
+body::-webkit-scrollbar-track{
+    box-shadow: inset 0px 0px 6px rgba(0,0,0,0.3);
+}
+body::-webkit-scrollbar-thumb{
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.background{
+    width: 100%;
+    height: 250px;
+    background-image: linear-gradient(to bottom right,
+     rgba(102, 204, 255, 0.541) -8%,
+     rgba(204, 255, 102, 0.452) 104%), 
+    url('../images/background.jpg');
+    background-size: cover;
+    position: relative;
+}
+.background .title{
+    font-size: 75px;
+    font-weight: 1000;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 5px;
+    word-spacing: 30px;
+    line-height: 100px;
+    position: absolute;
+    top : 28%;
+    left: 20%;
+    color: transparent;
+    background-image: linear-gradient(to right bottom, #b8c6db 0%, #f5f7fa 74%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    margin-top: 25px;
+    border-bottom: 2px solid darkgrey;
+}
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 70px;
+}
+.nav ul li a{
+    display: inline-block;
+    font-family: 'Baloo Chettan 2', cursive;
+    width: 300px;
+}
+
+.index, .regist, .sell{
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 20px 0px;
+    color: white;
+    box-shadow: 0px 0px 20px #eee;
+    border-radius: 20px;
+}
+.regist{
+    background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%)
+}
+.sell{
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)
+}
+ .nav ul li a:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
+ /* .nav ul li a:focus{
+    box-shadow: 0px 0px 10px rgba(0, 58, 115, 0.712);
+    color: wheat;
+ } */
+ .content{
+     margin-top: 20px;
+     padding-top: 20px;
+ }
+ .content .title1{
+     font-size: 42px;
+     text-align: center;
+     text-transform: uppercase;
+     font-weight: 800;
+     line-height: 50px;
+     color: transparent;
+     background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  10%, #1A2980  100%);
+     -webkit-background-clip: text;
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+ .image img {
+     border-radius: 6px;
+ }
+
+ 
+
+ 

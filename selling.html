@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/497e58feb8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/selling.css">
+    <title>Bán hàng</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="background">
+                <p class="title">Assignment JavaScript</p>
+            </div>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html" class="index">Bộ sưu tập ảnh</a></li>
+                <li><a href="registration.html" class="regist">Đăng ký</a></li>
+                <li><a href="#content" class="sell">Bán hàng</a></li>
+            </ul>
+        </nav>
+        <div class="content" id="content">
+            <p class="title1">
+                Bán hàng
+            </p>
+            <div class="select-prince">
+                <select name="price" id="" class="prince" onchange="filterProduct(this)">
+                    <option value="0">Chọn mức giá</option>
+                    <option value="1">Dưới 100</option>
+                    <option value="2">Từ 100 đến 500</option>
+                    <option value="3">Trên 500</option>
+                </select>
+            </div>
+            <div class="product">
+                <table class="table-product">
+                    <tr>
+                        <td><input type="checkbox" name="" onchange="checkAll(this)"></td>
+                        <th>Hàng hóa</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+
+                        <tr name="product">
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>Iphone 9</td>
+                            <td>700</td>
+                            <td><input type="number" name="" disabled class="amount"></td>
+                            <th></th>
+                        </tr>
+                        <tr name="product">
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>Samsung</td>
+                            <td>400</td>
+                            <td><input type="number" name="" disabled class="amount"></td>
+                            <th></th>
+                        </tr>
+                        <tr name="product">
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>Nokia</td>
+                            <td>100</td>
+                            <td><input type="number" name="" disabled class="amount"></td>
+                            <th></th>
+                        </tr>
+                        <tr name="product">
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>Sony Xperia</td>
+                            <td>450</td>
+                            <td><input type="number" name="" disabled class="amount"></td>
+                            <th></th>
+                        </tr>
+                        <tr name="product">
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>Motorola</td>
+                            <td>180</td>
+                            <td><input type="number" name="" disabled class="amount"></td>
+                            <th></th>
+                        </tr>
+                        <tr name="product">
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>Oppo</td>
+                            <td>600</td>
+                            <td><input type="number" name="" disabled class="amount"></td>
+                            <th></th>
+                        </tr>
+                        <tr name="product">
+                            <td><input type="checkbox" name="" id="" ></td>
+                            <td>BPhone</td>
+                            <td>90</td>
+                            <td><input type="number" name="" disabled class="amount"></td>
+                            <th></th>
+                        </tr>
+
+                        <tr class="sum">
+                            <th colspan="4">Tổng</th>
+                            <th id="tongtien"></th>
+                        </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./js/selling.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+.content{
+    font-size: 18px;
+    background-color: rgba(238, 238, 238, 0.767);
+    border-radius: 10px;
+    height: 770px;
+}
+body{
+    height: 1400px;
+}
+input, button, select, textarea, lable,label, legend{
+    font-size: 18px;
+}
+.sell{
+    box-shadow: 0px 0px 10px rgba(0, 58, 115, 0.712);
+    color: wheat;
+}
+.select-prince{
+    margin: 0 auto;
+    width: 250px;
+    margin-top: 30px;
+    text-align: center;
+}
+.select-prince .prince{
+    width: 250px;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+.product{
+    width: 80%;
+    margin: 0 auto;
+    /* border : 1px solid blue; */
+    margin-top: 30px;
+    background-color: white;
+}
+.product .table-product{
+    width: 100%;
+    background-color: white;
+    box-shadow: 3px 5px 10px gray;
+}
+table,tr,td,th{
+    border-collapse: collapse;
+    border : 1px solid lightslategray;
+    padding: 10px 15px;
+    text-align: center;
+}
+th{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.sum th{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight:800;
+}
+.amount{
+    width: 45px;
+    border :none;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    text-align: center;
+    padding: 3px;
+    transition: 0.3s;
+}
+.amount:focus,.amount:hover{
+    border: 1px solid lightslategray;
+    transition: 0.3s;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+tr:nth-child(even){
+    background-color: rgba(119, 160, 211, 0.2);
+}
+

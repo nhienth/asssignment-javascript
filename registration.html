@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/497e58feb8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/resgist.css">
+    <title>Đăng ký</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="background">
+                <p class="title">Assignment JavaScript</p>
+            </div>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html" class="index">Bộ sưu tập ảnh</a></li>
+                <li><a href="#content" class="regist">Đăng ký</a></li>
+                <li><a href="selling.html" class="sell">Bán hàng</a></li>
+            </ul>
+        </nav>
+        <div class="content" id="content">
+            <p class="title1">
+                đăng ký thành viên
+            </p>
+        <form name="formdk" action="" method="post" onsubmit="return kiem_tra()" autocomplete="off">
+        
+            <div class="form-field">
+                <input type="text" class="form-input" placeholder=" " id="maSV">
+                <lable class="form-lable">Mã sinh viên : </lable>
+            </div>
+            <p class="message" id="error1"></p>
+
+            <div class="form-field">
+                <input type="text" class="form-input" placeholder=" " id="nameSV">
+                <lable class="form-lable">Họ và tên : </lable>
+            </div>
+            <p class="message" id="error2"></p>
+
+            <div class="form-field">
+                <input type="text" class="form-input" placeholder=" " id="emailSV">
+                <lable class="form-lable">Email : </lable>
+            </div>
+            <p class="message" id="error3"></p>
+
+            <div class="form-field2">
+                <p class="title">Giới tính : </p>
+                <input type="radio" name="gender" id="Nam" class="gender">
+                <label for="Nam" class="gt">Nam</label>
+                <input type="radio"name="gender" id="Nu" class="gender">
+                <label for="Nu" class="gt">Nữ</label>
+            </div>
+            <p class="message" id="error4"></p>
+            
+            <div class="form-field2">
+                <p class="title">Sở thích : </p>
+                <input type="checkbox" id="cb1" name="hobby">
+                <label for="cb1">Đọc sách</label>
+                <input type="checkbox" id="cb2" name="hobby">
+                <label for="cb2">Du lịch</label>
+                <input type="checkbox" id="cb3" name="hobby">
+                <label for="cb3">Âm nhạc</label>
+                <input type="checkbox" id="cb4" name="hobby">
+                <label for="cb4">Ẩm thực</label>
+                <input type="checkbox" id="cb5" name="hobby">
+                <label for="cb5">Khác</label>
+            </div>
+            <div class="form-field" id="hobby-other" style="display:none">
+                <input type="text" class="form-input" placeholder=" " id="hobby-othervalue">
+                <lable class="form-lable">Sở thích khác : </lable>
+            </div>
+            <p class="message" id="error5"></p>
+
+
+            <div class="form-field2">
+                <p class="title">Quốc tịch : </p>
+                <select name="national" id="national">
+                    <option value="0">Chọn quốc tịch</option>
+                    <option value="1">Việt Nam</option>
+                    <option value="2">Thái Lan</option>
+                    <option value="3">Lào</option>
+                    <option value="4">Trung Quốc</option>
+                    <option value="5">Hàn Quốc</option>
+                </select>
+            </div>
+            <p class="message" id="error6"></p>
+
+
+            <div class="form-field3">
+                <p class="title">Ghi chú : </p>
+                <textarea name="text" id="note" rows="4"></textarea>
+            </div>
+            <p class="message" id="error7"></p>
+            
+            <div class="form-field">
+                <button type="submit" id="btn-dangky">Đăng ký</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    <script src="./js/registration.js"></script>
+</body>
+</html>
